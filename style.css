@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    
+}
+body{
+    font-family: 'Georama', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+header{
+    background-color: #273c75;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+}
+header h1{
+    margin: 10px 0 0px 60px;
+}
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    height: 100%;
+    margin-top: 60px;
+    padding: 10px 50px;
+}
+#sidebarmenu{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    background-color: rgb(20, 20, 70);
+    
+    transition: transform 250ms ease-in-out;
+}
+#opensidebarmenu:checked ~ #sidebarmenu{
+    transform: translateX(-250px);
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    color: rgb(189, 189, 189);
+}
+.menu div{
+    font-size: small;
+    color: rgb(105, 105, 105);
+    border-bottom: 1px solid rgba(172, 172, 172, .2);
+    padding: 10px;
+}
+.menu li a{
+    color: rgb(189, 189, 189);
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.sidebaricon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 20;
+    top: 22px;
+    left: 15px;
+    cursor: pointer;
+}
+.spinner{
+    height: 3px;
+    background-color: white;
+    transition: all .3s;
+}
+.spinner.middle, .spinner.bottom{
+    margin-top: 3px;
+}
+
+    
+/* *{
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+}
+ body{
+    font-family: 'Georama', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    background-color: #273c75;
+    padding-left: 1%;
+    font-weight: 600;
+    color: rgb(216, 216, 216);
+    font-size: 2rem;
+}
+header svg{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+header span{
+    margin-left: 1%;
+}
+main{
+    margin-top: 50px;
+    padding: 10px 50px;
+}
+#openmenu{
+    margin-left: -30px;
+}
+
+.icon-toggle{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#sidebar{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 50px;
+    background-color: rgb(20, 20, 70);
+    transform: translateX(-250px);
+}
+#openmenu:checked ~ #sidebar{
+    transform: translateX(300px);
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(189, 189, 189);;
+}
+.menu div{
+    font-size: small;
+    color: rgb(105, 105, 105);
+    border-bottom: 1px solid rgba(172, 172, 172, .2);
+    padding: 10px;
+}
+.menu li a{
+    font-weight: bold;
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+} */
